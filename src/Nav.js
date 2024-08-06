@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <div className='nav'>  
       <Link to='/' className='title'>PageTitle</Link>
-      <div className='links'>
+      <div className='linked'>
         <Link to='/blog'>Blog</Link>
         <Link to='/product'>Product</Link>
         <Link to='/about'>About</Link>
