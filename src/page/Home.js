@@ -1,9 +1,13 @@
 import React from 'react'
+import Nav from '../Nav'
+import Browsers from '../components/Browsers'
 
 const Home = () => {
   return (
     <div>
-      <h1>Home Page</h1>
+      <div className='home-page'></div>
+      <Nav/>
+      <Browsers/>
     </div>
   )
 }

@@ -1,19 +1,127 @@
-.nav{
-    background:  rgb(80, 0, 16);
+.nav {
+    background: rgb(80, 0, 16);
     padding: 15px 5%;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
 }
-.title{
-    color:#ffff;
-    font-size: 28px;
-    font-weight: bold;
-     
-}
-.linked a {
-    color: #ffff;
-    font-size: 18px;
-    margin: 0 15px;
 
+.title {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.title svg {
+    font-size: 45px;
+    margin-right: 7px;
+}
+
+.linkedd {
+    display: flex;
+}
+.arrow{
+    position: absolute;
+    font-size: px;
+    color:#ddd;
+    top: 35px;
+    right: 5px;
+    display: none;
+}
+
+.nav-link {
+    margin: 0 15px;
+    padding: 15px  10px;
+    position: relative;
+    &:hover{
+        .arrow{
+            display: block;
+        }
+        .nav-megamenu{
+            display: flex;
+        }
+        .inner-link svg{
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+.inner-link {
+    font-size: 22px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+}
+
+.auth a {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 23px;
+}
+
+.signup {
+    background: #427cff;
+}
+.nav-megamenu{
+    background: #fff;
+    position: absolute;
+    width: 675px;
+    left: -150px;
+    top:50px;
+    border-radius: 10px;
+    padding: 2px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid #eee;
+    display: none;
+
+}
+.menu-link{
+    width: 48.5%;
+    margin: 10px 0;
+    border-radius: 7.5px;
+   &:hover{
+    background: #427cff;
+    h6, p{
+        color: #fff;
+
+    }
+    .icon{
+        background: #fff;
+    }
+   }
+
+}.menu-link a{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #427cff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px ;
+    margin-right: 15px;
+    color:#427cff;
+
+}
+h6{
+    font-size: 19px;
+    color: #111;
+    margin-bottom: 5px;
+}
+p{
+    font-size: 18px;
+    color: #111;
 }
